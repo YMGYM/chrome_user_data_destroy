@@ -1,0 +1,13 @@
+@echo off
+title 구글크롬 사용자 데이터 삭제
+echo [Chrome 사용자 데이터 제거 - 1106기 안민준]
+echo 구글 크롬의 사용자 데이터를 삭제합니다.
+echo ---------------------------------------------------------------------
+echo 진행하면 크롬이 강제로 종료됩니다.
+pause
+taskkill /im chrome.exe /f
+cd ..
+cd Appdata/Local/google/Chrome
+del "User Data" /q
+cd C:\Program Files\Google\Chrome\Application
+chrome.exe
