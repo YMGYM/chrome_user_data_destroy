@@ -8,7 +8,7 @@ echo ---------------------------------------------------------------------
 pause
 taskkill /im chrome.exe /f
 cd ..
-cd Appdata/Local/google/Chrome
+cd C:\Users\[UserName]\AppData\Local\Google\Chrome
 del "User Data" /q
 cd C:\Program Files\Google\Chrome\Application
 chrome.exe
